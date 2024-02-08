@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 24px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: #d6d6d6;
+    border-radius: 24px;
+  }
+}
+
+html {
+  @apply scroll-smooth scrollbar;
+}
+
+body {
+  @apply font-sans bg-robin-bg;
+}
+
+.container {
+  @apply mx-auto px-4 w-full;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #eeeeee, #dadada, #ebebeb);
+  /* background: linear-gradient(90deg, #eeeeee, #ffd8bd, #fff0e6); */
+  background-size: 200%;
+  animation: skeleton 1s ease-in-out infinite;
+  -webkit-animation: skeleton 1s ease-in-out infinite;
+}
