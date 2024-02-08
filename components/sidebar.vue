@@ -7,7 +7,7 @@
       <div class="flex items-center justify-between mb-2">
         <img
           class="w-[120px] h-[30px] object-contain"
-          src="../assets/img/robin.svg"
+          src="@/assets/img/robin.svg"
           alt="logo"
         />
         <div
