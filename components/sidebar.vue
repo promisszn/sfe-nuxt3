@@ -121,9 +121,7 @@
       </ul>
     </div>
     <div class="w-[90%] border-t border-[#d3d7ea66] mb-6"></div>
-    <div
-      class="sidebar-item mb-16 text-subtle-blue hover:text-robin-orange"
-    >
+    <div class="sidebar-item mb-16 text-subtle-blue hover:text-robin-orange">
       <SvgoArrowleft />
       <span v-show="!isCollapsed">Collapse</span>
     </div>
@@ -139,7 +137,6 @@ let isCollapsed = ref(false);
 
 let toggleSidebar = () => {
   isCollapsed.value = !isCollapsed.value;
-  console.log(isCollapsed.value);
 };
 </script>
 
